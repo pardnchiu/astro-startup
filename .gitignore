@@ -1,0 +1,22 @@
+# Dependencies
+node_modules
+
+# Astro
+.astro
+dist
+*.tsbuildinfo
+
+# Environment variables
+.env
+.env.local
+.env.dev.local
+.env.test.local
+.env.prod.local
+
+# OS files
+.DS_Store
+
+# IDE
+workspace.code-workspace
+.vscode/
+.idea/

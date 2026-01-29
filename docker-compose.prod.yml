@@ -1,0 +1,15 @@
+services:
+  astro:
+    image: node:22-alpine
+    working_dir: /usr/src/app
+    volumes:
+      - ./app:/usr/src/app
+    command: ["sh", "-c", "npm ci --omit=dev && npm run build && npm run preview -- --host"]
+    ports:
+      - "${NODE_PORT}:4321"
+    environment:
+      - NODE_ENV=production
+      - MAX_CPU=${MAX_CPU:-1}
+      - HOST=0.0.0.0
+    stdin_open: true
+    restart: unless-stopped

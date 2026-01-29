@@ -1,0 +1,33 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="首頁 | Astro React Startup">
+  <section class="main">
+    <h1 class="title">Hello Astro + React</h1>
+    <p class="description">歡迎使用 Astro 與 React</p>
+  </section>
+</BaseLayout>
+
+<style lang="scss">
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - var(--nav-height));
+    padding: var(--spacing-lg);
+  }
+
+  .title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .description {
+    font-size: 1.25rem;
+    color: var(--color-text-light);
+  }
+</style>
