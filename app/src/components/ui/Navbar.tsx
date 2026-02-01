@@ -1,5 +1,6 @@
-import { NAV_LINKS } from '@/constants';
-import styles from './Navbar.module.scss';
+/** @jsxImportSource react */
+import { NAV_LINKS } from "@/constants";
+import styles from "./Navbar.module.scss";
 
 export function Navbar() {
   return (

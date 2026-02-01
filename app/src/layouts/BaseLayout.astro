@@ -1,16 +1,13 @@
 ---
-import { Navbar } from '@/components/ui';
-import '@/styles/globals.scss';
+import { Navbar } from "@/components/ui";
+import "@/styles/globals.scss";
 
 interface Props {
   title?: string;
   description?: string;
 }
 
-const { 
-  title = 'Astro React Startup',
-  description = 'Astro + React 應用程式'
-} = Astro.props;
+const { title = "Astro React Startup", description = "Astro + React 應用程式" } = Astro.props;
 ---
 
 <!doctype html>
